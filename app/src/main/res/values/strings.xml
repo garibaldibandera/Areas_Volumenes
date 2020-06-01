@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">AreasVolumenes</string>
+
+    <string name="opcion_areas">AREAS</string>
+    <string name="opcion_volumenes">VOLÚMENES</string>
+    <string name="opcion_operaciones_realizadas">OPERACIONES REALIZADAS</string>
+
+    <string name="cuadrado">CUADRADO</string>
+    <string name="rectangulo">RECTANGULO</string>
+    <string name="triangulo">TRIANGULO</string>
+    <string name="circulo">CIRCULO</string>
+
+    <string name="esfera">ESFERA</string>
+    <string name="cilindro">CILINDRO</string>
+    <string name="cono">CONO</string>
+    <string name="cubo">CUBO</string>
+
+    <string-array name="opciones">
+        <item>@string/opcion_areas</item>
+        <item>@string/opcion_volumenes</item>
+        <item>@string/opcion_operaciones_realizadas</item>
+    </string-array>
+
+    <string-array name="areas">
+        <item>@string/cuadrado</item>
+        <item>@string/rectangulo</item>
+        <item>@string/triangulo</item>
+        <item>@string/circulo</item>
+    </string-array>
+
+    <string-array name="volumenes">
+        <item>@string/esfera</item>
+        <item>@string/cilindro</item>
+        <item>@string/cono</item>
+        <item>@string/cubo</item>
+    </string-array>
+
 </resources>
