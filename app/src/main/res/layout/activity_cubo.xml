@@ -89,7 +89,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15sp"
-            android:hint="@string/area"
+            android:hint="@string/valor_volumen"
             android:textSize="18sp"
             android:textStyle="bold" />
 

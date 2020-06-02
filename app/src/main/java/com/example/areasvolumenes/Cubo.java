@@ -44,5 +44,4 @@ public class Cubo extends AppCompatActivity {
         lado.setText("");
         resultado.setText(getResources().getString(R.string.area));
     }
-
 }

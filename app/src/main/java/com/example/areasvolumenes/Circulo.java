@@ -45,5 +45,4 @@ public class Circulo extends AppCompatActivity {
         radio.setText("");
         resultado.setText(getResources().getString(R.string.area));
     }
-
 }

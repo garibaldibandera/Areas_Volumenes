@@ -45,5 +45,4 @@ public class Cuadrado extends AppCompatActivity {
         lado.setText("");
         resultado.setText(getResources().getString(R.string.area));
     }
-
 }
