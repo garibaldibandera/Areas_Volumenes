@@ -26,7 +26,7 @@
     <string name="valor_base">Valor de la Base</string>
     <string name="valor_altura">Valor de la Altura</string>
     <string name="valor_del_radio">Valor del Radio</string>
-
+    <string name="valor_volumen">"Volumen:   "</string>
 
     <string-array name="opciones">
         <item>@string/opcion_areas</item>

@@ -4,39 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="20sp"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".Cuadrado">
+    tools:context=".Cilindro">
 
     <TextView
-        android:id="@+id/lblCuadrado"
-        android:layout_width="match_parent"
+        android:id="@+id/txtCilindro"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="@string/cuadrado"
+        android:hint="@string/cilindro"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="bottom|center"
+        android:layout_marginTop="20sp"
+        android:gravity="center_horizontal"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/lvlValorLado"
+            android:id="@+id/lblRadio"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="@string/valor_lado"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/valor_del_radio"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/txtValorlado"
-            android:layout_width="100dp"
+            android:id="@+id/txtValorRadio"
+            android:layout_width="62dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15sp"
-            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="right"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/lblAltura"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/valor_altura"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtValorAltura"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:gravity="right"
@@ -45,9 +63,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
         android:orientation="horizontal">
 
         <Button
@@ -55,48 +75,48 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/calcular"
-            android:textSize="18sp" />
+            android:text="@string/calcular" />
 
         <Button
             android:id="@+id/btnBorrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/borrar"
-            android:textSize="18sp" />
+            android:text="@string/borrar" />
+
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
+        android:layout_weight="1"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/lblResultado"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/resultado"
-            android:textSize="24sp"
+            android:text="@string/resultado"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/lblValorResultado"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15sp"
-            android:hint="@string/area"
+            android:text="@string/valor_volumen"
+            android:textStyle="bold"
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/btnOK"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
-            android:text="@string/ok"
-            android:textSize="18sp" />
+            android:text="@string/ok" />
     </LinearLayout>
 
 </LinearLayout>
