@@ -2,6 +2,7 @@ package com.example.areasvolumenes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 public class Cilindro extends AppCompatActivity {
     private EditText radio, altura;
     private TextView resultado;
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +50,12 @@ public class Cilindro extends AppCompatActivity {
 
     public void limpiar(View v){
         radio.setText("");
+        altura.setText("");
         resultado.setText(getResources().getString(R.string.valor_volumen));
+    }
+
+    public void botonok(View v){
+        intent=new Intent(Cilindro.this,CalcularVolumenes.class);
+        startActivity(intent);
     }
 }

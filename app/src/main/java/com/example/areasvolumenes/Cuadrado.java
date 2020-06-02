@@ -2,6 +2,7 @@ package com.example.areasvolumenes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 public class Cuadrado extends AppCompatActivity {
     private EditText lado;
     private TextView resultado;
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,4 +47,10 @@ public class Cuadrado extends AppCompatActivity {
         lado.setText("");
         resultado.setText(getResources().getString(R.string.area));
     }
+    public void botonok(View v){
+        intent=new Intent(Cuadrado.this,CalcularArea.class);
+        startActivity(intent);
+    }
+
+
 }

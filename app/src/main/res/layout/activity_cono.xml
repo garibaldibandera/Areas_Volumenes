@@ -129,6 +129,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
             android:gravity="center_horizontal"
+            android:onClick="botonok"
             android:text="@string/ok"
             android:textSize="18sp"
             android:textStyle="bold" />
