@@ -15,6 +15,19 @@
     <string name="cono">CONO</string>
     <string name="cubo">CUBO</string>
 
+    <string name="titulo_opciones">OPCIONES</string>
+    <string name="calcular">Calcular</string>
+    <string name="borrar">Borrar</string>
+    <string name="resultado">Resultado</string>
+    <string name="area">"Area:  "</string>
+    <string name="ok">OK</string>
+
+    <string name="valor_lado">Valor del Lado:  </string>
+    <string name="valor_base">Valor de la Base</string>
+    <string name="valor_altura">Valor de la Altura</string>
+    <string name="valor_del_radio">Valor del Radio</string>
+
+
     <string-array name="opciones">
         <item>@string/opcion_areas</item>
         <item>@string/opcion_volumenes</item>
