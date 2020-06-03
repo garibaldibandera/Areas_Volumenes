@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AreasVolumenes</string>
+    <string name="opcion_areas">AREAS</string>
+    <string name="opcion_volumenes">VOLUMES</string>
+    <string name="opcion_operaciones_realizadas">"OPERATIONS PERFORMED "</string>
+    <string name="cuadrado">SQUARE</string>
+    <string name="rectangulo">RECTANGULO</string>
+    <string name="triangulo">TRIANGLE</string>
+    <string name="circulo">CIRCLE</string>
+    <string name="esfera">SPHERE</string>
+    <string name="cilindro">CYLINDER</string>
+    <string name="cono">CONE</string>
+    <string name="cubo">CUBE</string>
+    <string name="titulo_opciones">OPTIONS</string>
+    <string name="calcular">Calculate</string>
+    <string name="borrar">Delete</string>
+    <string name="resultado">Outcome</string>
+    <string name="area">"Area: "</string>
+    <string name="ok">OK</string>
+    <string name="valor_lado">"Side Value: "</string>
+    <string name="valor_base">Base Value</string>
+    <string name="valor_altura">"Height Value "</string>
+    <string name="valor_del_radio">"Radius value "</string>
+    <string name="lado">"Side: "</string>
+    <string name="base">"Base: "</string>
+    <string name="altura">"Height: "</string>
+    <string name="radio">"Radio: "</string>
+    <string name="salto_linea">"\n"</string>
+    <string name="valor_volumen">"Volume: "</string>
+    <string name="error_valor">"Type a value "</string>
+    <string name="ordinal">No.</string>
+    <string name="operacion">"Operation "</string>
+    <string name="datos">"Data "</string>
+    <string name="operacion_guardada">"Saved Operation "</string>
+</resources>

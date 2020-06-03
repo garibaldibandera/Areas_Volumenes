@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:gravity="right"
+            android:gravity="center_horizontal"
             android:inputType="number" />
 
         <TextView
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:gravity="right"
+            android:gravity="center_horizontal"
             android:inputType="number" />
 
     </LinearLayout>
