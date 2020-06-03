@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Cubo extends AppCompatActivity {
     private EditText lado;
@@ -22,11 +23,19 @@ public class Cubo extends AppCompatActivity {
     }
     public void calcular (View v){
         double vlrlado, vlrvolumen=0;
+        String operacion, datos, total;
+        Operaciones operaciones;
         if (validar()){
             vlrlado=Double.parseDouble(lado.getText().toString());
             vlrvolumen=(vlrlado*vlrlado)*vlrlado;
+            resultado.setText(String.format("%1s %.2f",getResources().getString(R.string.valor_volumen),vlrvolumen));
+            operacion=getResources().getString(R.string.valor_volumen)+" "+getString(R.string.cubo);
+            datos=getString(R.string.lado)+lado.getText().toString();
+            total=resultado.getText().toString();
+            operaciones=new Operaciones(operacion, datos, total);
+            operaciones.guardar();
+            Toast.makeText(this,getString(R.string.operacion_guardada), Toast.LENGTH_LONG).show();
         }
-        resultado.setText(String.format("%1s %.2f",getResources().getString(R.string.valor_volumen),vlrvolumen));
     }
 
     public boolean validar() {

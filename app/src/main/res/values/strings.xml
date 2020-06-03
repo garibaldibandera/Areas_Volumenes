@@ -26,9 +26,20 @@
     <string name="valor_base">Valor de la Base</string>
     <string name="valor_altura">Valor de la Altura</string>
     <string name="valor_del_radio">Valor del Radio</string>
+
+    <string name="lado">Lado:   </string>
+    <string name="base">Base: </string>
+    <string name="altura">Altura: </string>
+    <string name="radio">Radio: </string>
+    <string name="salto_linea">\n</string>
+
     <string name="valor_volumen">"Volumen:   "</string>
 
     <string name="error_valor">Digite un valor</string>
+    <string name="ordinal">No.</string>
+    <string name="operacion">Operacion</string>
+    <string name="datos">Datos</string>
+    <string name="operacion_guardada">Operacion Guardada</string>
 
     <string-array name="opciones">
         <item>@string/opcion_areas</item>

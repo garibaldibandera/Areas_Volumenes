@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Circulo extends AppCompatActivity {
     private EditText radio;
@@ -24,11 +25,19 @@ public class Circulo extends AppCompatActivity {
 
     public void calcular (View v){
         double vlrradio, vlrarea=0, pi = 3.1416;
+        String operacion, datos, total;
+        Operaciones operaciones;
         if (validar()){
             vlrradio=Double.parseDouble(radio.getText().toString());
             vlrarea= vlrradio*pi;
+            resultado.setText(String.format("%1s %.2f",getResources().getString(R.string.area),vlrarea));
+            operacion=getResources().getString(R.string.area)+" "+getString(R.string.circulo);
+            datos=getString(R.string.radio)+radio.getText().toString();
+            total=resultado.getText().toString();
+            operaciones=new Operaciones(operacion, datos, total);
+            operaciones.guardar();
+            Toast.makeText(this,getString(R.string.operacion_guardada), Toast.LENGTH_LONG).show();
         }
-        resultado.setText(String.format("%1s %.2f",getResources().getString(R.string.area),vlrarea));
     }
 
     public boolean validar() {
