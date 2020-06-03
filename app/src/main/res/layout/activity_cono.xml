@@ -41,7 +41,9 @@
             android:layout_weight="1"
             android:ems="10"
             android:gravity="right"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/lblAltura"
@@ -60,12 +62,14 @@
             android:layout_weight="1"
             android:ems="10"
             android:gravity="right"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
         android:layout_weight="1"
@@ -99,7 +103,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
         android:layout_weight="1"
@@ -117,7 +121,7 @@
 
         <TextView
             android:id="@+id/lblValorResultado"
-            android:layout_width="wrap_content"
+            android:layout_width="151dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="15sp"
             android:gravity="center_horizontal"

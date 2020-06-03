@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".Triangulo">
 
@@ -39,7 +40,9 @@
             android:layout_weight="1"
             android:ems="10"
             android:gravity="right"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/lblValorAltura"
@@ -58,12 +61,14 @@
             android:layout_weight="1"
             android:ems="10"
             android:gravity="right"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
         android:orientation="horizontal">
@@ -75,7 +80,8 @@
             android:layout_weight="1"
             android:onClick="calcular"
             android:text="@string/calcular"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnBorrar"
@@ -84,11 +90,12 @@
             android:layout_weight="1"
             android:onClick="limpiar"
             android:text="@string/borrar"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
         android:gravity="center_horizontal"
@@ -110,7 +117,8 @@
             android:layout_marginTop="15sp"
             android:gravity="center_horizontal"
             android:text="@string/area"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnOK"
@@ -119,7 +127,8 @@
             android:layout_marginTop="15sp"
             android:onClick="botonok"
             android:text="@string/ok"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </LinearLayout>

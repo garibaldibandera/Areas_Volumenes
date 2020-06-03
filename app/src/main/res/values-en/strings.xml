@@ -5,7 +5,7 @@
     <string name="opcion_volumenes">VOLUMES</string>
     <string name="opcion_operaciones_realizadas">"OPERATIONS PERFORMED "</string>
     <string name="cuadrado">SQUARE</string>
-    <string name="rectangulo">RECTANGULO</string>
+    <string name="rectangulo">RECTANGLE</string>
     <string name="triangulo">TRIANGLE</string>
     <string name="circulo">CIRCLE</string>
     <string name="esfera">SPHERE</string>

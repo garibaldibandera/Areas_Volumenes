@@ -40,7 +40,9 @@
             android:layout_weight="1"
             android:ems="10"
             android:gravity="center_horizontal"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/lblAltura"
@@ -58,7 +60,9 @@
             android:layout_weight="1"
             android:ems="10"
             android:gravity="center_horizontal"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -76,7 +80,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="calcular"
-            android:text="@string/calcular" />
+            android:text="@string/calcular"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnBorrar"
@@ -84,7 +90,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="limpiar"
-            android:text="@string/borrar" />
+            android:text="@string/borrar"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -106,12 +114,12 @@
 
         <TextView
             android:id="@+id/lblValorResultado"
-            android:layout_width="match_parent"
+            android:layout_width="151dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="15sp"
             android:text="@string/valor_volumen"
-            android:textStyle="bold"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnOk"
@@ -119,7 +127,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
             android:onClick="botonok"
-            android:text="@string/ok" />
+            android:text="@string/ok"
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </LinearLayout>
