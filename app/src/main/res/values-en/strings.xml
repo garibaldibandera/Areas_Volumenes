@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AreasVolumenes</string>
+    <string name="app_name">AreasVolumes</string>
     <string name="opcion_areas">AREAS</string>
     <string name="opcion_volumenes">VOLUMES</string>
     <string name="opcion_operaciones_realizadas">"OPERATIONS PERFORMED "</string>
