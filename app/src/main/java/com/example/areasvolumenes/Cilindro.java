@@ -23,6 +23,7 @@ public class Cilindro extends AppCompatActivity {
         altura=findViewById(R.id.txtValorAltura);
         resultado=findViewById(R.id.lblValorResultado);
     }
+
     public void calcular (View v){
         double vlrradio, vlraltura, vlrvolumen=0, pi = 3.1416;
         String operacion, datos, total;
@@ -32,9 +33,8 @@ public class Cilindro extends AppCompatActivity {
             vlraltura=Double.parseDouble(altura.getText().toString());
             vlrvolumen= pi*((vlrradio*vlrradio)*vlraltura);
             resultado.setText(String.format("%1s %.2f",getResources().getString(R.string.valor_volumen),vlrvolumen));
+            operacion=getResources().getString(R.string.valor_volumen)+getString(R.string.cilindro);
             datos=getString(R.string.radio)+radio.getText().toString()+getString(R.string.salto_linea)+getString(R.string.altura)+altura.getText().toString();
-            operacion=getResources().getString(R.string.valor_volumen)+" "+getString(R.string.cilindro);
-            datos=getString(R.string.radio)+radio.getText().toString();
             total=resultado.getText().toString();
             operaciones=new Operaciones(operacion, datos, total);
             operaciones.guardar();

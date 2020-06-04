@@ -13,6 +13,7 @@ public class Cono extends AppCompatActivity {
     private EditText radio, altura;
     private TextView resultado;
     private Intent intent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,15 +33,15 @@ public class Cono extends AppCompatActivity {
             vlraltura=Double.parseDouble(altura.getText().toString());
             vlrvolumen= (pi*((vlrradio*vlrradio)*vlraltura))/3;
             resultado.setText(String.format("%1s %.2f",getResources().getString(R.string.valor_volumen),vlrvolumen));
+            operacion=getResources().getString(R.string.valor_volumen)+getString(R.string.cono);
             datos=getString(R.string.radio)+radio.getText().toString()+getString(R.string.salto_linea)+getString(R.string.altura)+altura.getText().toString();
-            operacion=getResources().getString(R.string.valor_volumen)+" "+getString(R.string.cono);
-            datos=getString(R.string.radio)+radio.getText().toString();
             total=resultado.getText().toString();
             operaciones=new Operaciones(operacion, datos, total);
             operaciones.guardar();
             Toast.makeText(this,getString(R.string.operacion_guardada), Toast.LENGTH_LONG).show();
         }
     }
+
     public boolean validar() {
         String error_valor;
         error_valor=getResources().getString(R.string.error_valor);
@@ -66,5 +67,4 @@ public class Cono extends AppCompatActivity {
         intent=new Intent(Cono.this,CalcularVolumenes.class);
         startActivity(intent);
     }
-
 }

@@ -31,7 +31,7 @@ public class Circulo extends AppCompatActivity {
             vlrradio=Double.parseDouble(radio.getText().toString());
             vlrarea= vlrradio*pi;
             resultado.setText(String.format("%1s %.2f",getResources().getString(R.string.area),vlrarea));
-            operacion=getResources().getString(R.string.area)+" "+getString(R.string.circulo);
+            operacion=getResources().getString(R.string.area)+getString(R.string.circulo);
             datos=getString(R.string.radio)+radio.getText().toString();
             total=resultado.getText().toString();
             operaciones=new Operaciones(operacion, datos, total);

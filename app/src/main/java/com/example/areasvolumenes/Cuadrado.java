@@ -31,7 +31,7 @@ public class Cuadrado extends AppCompatActivity {
             vlrlado=Double.parseDouble(lado.getText().toString());
             vlrarea=vlrlado*vlrlado;
             resultado.setText(String.format("%1s %.2f",getResources().getString(R.string.area),vlrarea));
-            operacion=getResources().getString(R.string.area)+" "+getString(R.string.cuadrado);
+            operacion=getResources().getString(R.string.area)+getString(R.string.cuadrado);
             datos=getString(R.string.lado)+lado.getText().toString();
             total=resultado.getText().toString();
             operaciones=new Operaciones(operacion, datos, total);
@@ -60,6 +60,4 @@ public class Cuadrado extends AppCompatActivity {
         intent=new Intent(Cuadrado.this,CalcularArea.class);
         startActivity(intent);
     }
-
-
 }

@@ -15,7 +15,6 @@ public class CalcularArea extends AppCompatActivity {
     private ArrayAdapter<String> adapter;
     private Intent intent;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +48,5 @@ public class CalcularArea extends AppCompatActivity {
                 }
             }
         });
-
     }
 }

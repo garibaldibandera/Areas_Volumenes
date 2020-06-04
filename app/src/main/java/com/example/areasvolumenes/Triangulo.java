@@ -32,15 +32,13 @@ public class Triangulo extends AppCompatActivity {
             vlraltura=Double.parseDouble(altura.getText().toString());
             vlrarea=(vlrbase*vlraltura)/2;
             resultado.setText(String.format("%1s %.2f",getResources().getString(R.string.area),vlrarea));
-            operacion=getResources().getString(R.string.area)+" "+getString(R.string.triangulo);
+            operacion=getResources().getString(R.string.area)+getString(R.string.triangulo);
             datos=getString(R.string.base)+base.getText().toString()+getString(R.string.salto_linea)+getString(R.string.altura)+altura.getText().toString();
             total=resultado.getText().toString();
             operaciones=new Operaciones(operacion, datos, total);
             operaciones.guardar();
             Toast.makeText(this,getString(R.string.operacion_guardada), Toast.LENGTH_LONG).show();
-
         }
-        resultado.setText(String.format("%1s %.2f",getResources().getString(R.string.area),vlrarea));
     }
 
     public boolean validar() {

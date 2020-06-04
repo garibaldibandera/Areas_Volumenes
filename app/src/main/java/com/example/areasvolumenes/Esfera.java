@@ -30,7 +30,7 @@ public class Esfera extends AppCompatActivity {
             vlrradio=Double.parseDouble(radio.getText().toString());
             vlrvolumen= (4*(pi*((vlrradio*vlrradio)*vlrradio)))/3;
             resultado.setText(String.format("%1s %.2f",getResources().getString(R.string.valor_volumen),vlrvolumen));
-            operacion=getResources().getString(R.string.valor_volumen)+" "+getString(R.string.esfera);
+            operacion=getResources().getString(R.string.valor_volumen)+getString(R.string.esfera);
             datos=getString(R.string.radio)+radio.getText().toString();
             total=resultado.getText().toString();
             operaciones=new Operaciones(operacion, datos, total);
@@ -59,5 +59,4 @@ public class Esfera extends AppCompatActivity {
         intent=new Intent(Esfera.this,CalcularVolumenes.class);
         startActivity(intent);
     }
-
 }

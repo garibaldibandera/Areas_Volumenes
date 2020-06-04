@@ -41,6 +41,5 @@ public class OperacionesRealizadas extends AppCompatActivity {
 
             tabla.addView(fila);
         }
-
     }
 }

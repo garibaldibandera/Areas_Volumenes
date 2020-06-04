@@ -29,7 +29,7 @@ public class Cubo extends AppCompatActivity {
             vlrlado=Double.parseDouble(lado.getText().toString());
             vlrvolumen=(vlrlado*vlrlado)*vlrlado;
             resultado.setText(String.format("%1s %.2f",getResources().getString(R.string.valor_volumen),vlrvolumen));
-            operacion=getResources().getString(R.string.valor_volumen)+" "+getString(R.string.cubo);
+            operacion=getResources().getString(R.string.valor_volumen)+getString(R.string.cubo);
             datos=getString(R.string.lado)+lado.getText().toString();
             total=resultado.getText().toString();
             operaciones=new Operaciones(operacion, datos, total);
@@ -58,5 +58,4 @@ public class Cubo extends AppCompatActivity {
         intent=new Intent(Cubo.this,CalcularVolumenes.class);
         startActivity(intent);
     }
-
 }

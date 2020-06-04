@@ -11,5 +11,4 @@ public class Datos {
     public static ArrayList<Operaciones> obtener(){
         return operaciones;
     }
-
 }
